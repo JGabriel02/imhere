@@ -19,5 +19,15 @@ export const stylesParticipant = StyleSheet.create({
         flex: 1,  
         color: 'black'
     },
+
+    removeText: {
+        position: "absolute",
+        right: 16,
+        top: "50%",
+        transform: [{ translateY: -12 }],
+        fontSize: 16,
+        color: "red",
+        fontWeight: "bold",
+    },
     
 })

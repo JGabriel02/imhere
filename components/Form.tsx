@@ -24,7 +24,7 @@ export default function Button({ onAddParticipant }: Props) {
   return (
     <View style={stylesForm.form}>
       <TextInput
-        placeholder="Nome do Participante"
+        placeholder="Nome do Participante 😎"
         style={stylesHome.input}
         value={participantName}
         onChangeText={setParticipantName} 
