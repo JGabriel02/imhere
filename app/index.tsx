@@ -1,0 +1,62 @@
+import { Text, View, StatusBar, FlatList, Alert } from "react-native";
+import { stylesGlobal } from "../styles/styles";
+import { stylesHome } from "../styles/stylesHome";
+import { stylesForm } from "../styles/stylesForm";
+import Button from "@/components/Form";
+import { Participant,  } from "@/components/Participant";
+
+
+export default function HomeScreen() {
+  const participants = ["João", "Ana", "Gabriel", "Vitor", "Dias", "Gordão", "Lodi", "Felipe", "Dudu", "Luam", "Elias" ]
+
+
+
+  function handleParticipantRemove(name: string){
+    Alert.alert("Remover" , `Remover o participante ${name}?`, [
+      
+      {
+        text: 'Não',
+        style: "cancel"
+      },
+      {
+        text: 'Sim',
+        onPress: () => Alert.alert("Removido")
+      },
+    ])
+  }
+
+  return (
+    <>
+      <StatusBar backgroundColor="#1f252f" />
+      <View style={stylesGlobal.container}>
+        <Text style={stylesHome.eventName}>Niver do JG 🎉</Text>
+        <Text style={stylesHome.eventDate}>Quarta, 14 de Maio de 2025</Text>
+        <Button/>
+
+        
+      <FlatList 
+        data={[]}
+        keyExtractor={item => item}
+        renderItem={({item}) =>(
+          <Participant 
+            key={item}
+            name= {item}
+            onRemove={() => handleParticipantRemove(item)}/> 
+        )}
+
+        ListEmptyComponent={() => (
+          <View style={stylesForm.listEmptyContainer}>
+            <Text style={stylesForm.listEmptyText}>
+              Lista Vazia 😪
+            </Text>
+            <Text style={stylesForm.listEmptySubtext}>
+              Adicione participantes na sua lista de presença
+            </Text>
+          </View>
+        )}
+      />
+   
+      </View>
+    </>
+  )
+}

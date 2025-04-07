@@ -8,6 +8,7 @@ export default function Button(){
     function handleParticipantAdd(){
         console.log("add")
       }
+
     return(
         <View style={stylesForm.form}>
         <TextInput 
@@ -16,7 +17,7 @@ export default function Button(){
         />
 
         <TouchableOpacity
-          style={stylesButton.Button}
+          style={stylesButton.ButtonAdd}
           onPress={handleParticipantAdd}
           
           >
