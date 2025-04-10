@@ -1,50 +1,34 @@
-# Welcome to your Expo app 👋
+# **ImHere - Lista de Participantes**
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Este é um aplicativo React Native que permite gerenciar uma lista de participantes. Os usuários podem adicionar participantes, visualizar a lista e remover participantes por meio de um botão ou gesto de deslizar.
 
-## Get started
+---
 
-1. Install dependencies
+## **Funcionalidades**
 
-   ```bash
-   npm install
-   ```
+- **Adicionar Participantes**: Insira o nome de um participante e adicione-o à lista.
+- **Remover Participantes**:
+  - Clique no botão "Remover" para excluir diretamente.
+  - Deslize para a direita para remover com um gesto.
+- **Persistência de Dados**: A lista de participantes é salva localmente no dispositivo usando `AsyncStorage` e carregada automaticamente ao abrir o aplicativo.
 
-2. Start the app
+---
 
-   ```bash
-    npx expo start
-   ```
+## **Tecnologias Utilizadas**
 
-In the output, you'll find options to open the app in a
+- **React Native**: Framework para desenvolvimento de aplicativos móveis.
+- **TypeScript**: Superset do JavaScript para tipagem estática.
+- **AsyncStorage**: Biblioteca para armazenamento local no dispositivo.
+- **React Native Gesture Handler**: Biblioteca para manipulação de gestos.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## **Pré-requisitos**
 
-## Get a fresh project
+Antes de começar, certifique-se de ter instalado:
 
-When you're ready, run:
+- Node.js
+- Yarn ou npm
+- Expo CLI (se estiver usando Expo)
 
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
