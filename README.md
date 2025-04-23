@@ -5,13 +5,12 @@ Você pode adicionar novos nomes, visualizar quem está presente e remover parti
 
 ---
 
----
 
 ## 📸 Demonstração
 
 <div align="center">
-  <img src="assets/demo/screen1.gif" width="30%" alt="Tela de adição" />
-  <img src="assets/demo/screen2.gif" width="30%" alt="Participantes adicionados" />
+  <img src="assets/images/imHere.jpg" width="30%" alt="Tela de adição" />
+  <img src="assets/images/imHere01.jpg" width="30%" alt="Participantes adicionados" />
 </div>
 
 ---
