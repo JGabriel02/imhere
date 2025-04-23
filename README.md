@@ -1,34 +1,60 @@
-# **ImHere - Lista de Participantes**
+# 👥 ImHere - Lista de Participantes
 
-Este é um aplicativo React Native que permite gerenciar uma lista de participantes. Os usuários podem adicionar participantes, visualizar a lista e remover participantes por meio de um botão ou gesto de deslizar.
-
----
-
-## **Funcionalidades**
-
-- **Adicionar Participantes**: Insira o nome de um participante e adicione-o à lista.
-- **Remover Participantes**:
-  - Clique no botão "Remover" para excluir diretamente.
-  - Deslize para a direita para remover com um gesto.
-- **Persistência de Dados**: A lista de participantes é salva localmente no dispositivo usando `AsyncStorage` e carregada automaticamente ao abrir o aplicativo.
+**ImHere** é um aplicativo desenvolvido com **React Native** que permite gerenciar uma lista de participantes de forma prática.  
+Você pode adicionar novos nomes, visualizar quem está presente e remover participantes facilmente com um botão ou gesto de deslizar.
 
 ---
 
-## **Tecnologias Utilizadas**
+---
 
-- **React Native**: Framework para desenvolvimento de aplicativos móveis.
-- **TypeScript**: Superset do JavaScript para tipagem estática.
-- **AsyncStorage**: Biblioteca para armazenamento local no dispositivo.
-- **React Native Gesture Handler**: Biblioteca para manipulação de gestos.
+## 📸 Demonstração
+
+<div align="center">
+  <img src="assets/demo/screen1.gif" width="30%" alt="Tela de adição" />
+  <img src="assets/demo/screen2.gif" width="30%" alt="Participantes adicionados" />
+</div>
 
 ---
 
-## **Pré-requisitos**
+## ✨ Funcionalidades
 
-Antes de começar, certifique-se de ter instalado:
+- ➕ **Adicionar Participantes**  
+  Insira o nome de um participante e adicione-o à lista com apenas um toque.
 
-- Node.js
-- Yarn ou npm
-- Expo CLI (se estiver usando Expo)
+- 🗑️ **Remover Participantes**  
+  - Clique no botão “Remover” para excluir diretamente  
+  - Ou deslize para a direita para remover com um gesto intuitivo
+
+- 💾 **Persistência de Dados**  
+  A lista é salva localmente no dispositivo usando **AsyncStorage** e recarregada automaticamente ao abrir o app.
 
 ---
+
+## 🚀 Tecnologias Utilizadas
+
+- **React Native** – Framework para desenvolvimento de aplicativos móveis
+- **TypeScript** – Tipagem estática para mais segurança no código
+- **AsyncStorage** – Armazenamento local persistente
+- **React Native Gesture Handler** – Suporte a gestos como swipe
+
+---
+
+## 📁 Estrutura do Projeto
+
+```
+├── app/                # Páginas e navegação
+│   ├── _layout.jsx         # Layout principal
+│   ├── +not-found.jsx      # Tela de erro 404
+│   └── (tabs)/             # Abas principais
+│       ├── _layout.jsx         # Layout das abas
+│       ├── index.jsx           # Lista de transações
+│       ├── add-transactions.jsx # Adicionar transações
+│       └── summary.jsx         # Resumo financeiro
+├── components/          # Componentes reutilizáveis
+├── constants/           # Constantes do projeto (cores, categorias, etc.)
+├── contexts/            # Contexto global para estado compartilhado
+├── styles/              # Estilos globais
+├── assets/              # Imagens e outros recursos estáticos
+├── package.json         # Configurações e dependências do projeto
+└──
+```
